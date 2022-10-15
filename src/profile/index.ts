@@ -11,10 +11,10 @@ type Profile = {
 };
 
 export const profile: Profile = {
-  name: "syumai",
-  twitter: "__syumai",
-  github: "syumai",
-  website: "syum.ai",
-  description: "Web Application Developer",
+  name: "Hamachi",
+  twitter: "Go2eatnow",
+  github: "Hamachi-geek",
+  website: "Making...",
+  description: "Gadget enthusiast",
   avatar,
 };

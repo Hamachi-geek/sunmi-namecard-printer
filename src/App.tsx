@@ -27,9 +27,15 @@ const App = () => {
           uri: `data:image/png;base64,${profile.avatar}`,
         }}
       />
-      <Text>{printerStatusMsg}</Text>
+      <Text style={{ color: 'white' }}>Hello! I'm Hamachi!!!</Text>
+      <Text style={{ color: 'white', fontWeight: 'bold' }}> Twitter</Text>
+      <Text style={{ color: 'white' }}>@Go2eatnow</Text>
+      <Text style={{ color: 'white', fontWeight: 'bold' }}> Mastdon</Text>
+      <Text style={{ color: 'white' }}>@hamachi@mstdn.y-zu.org</Text>
+      <Text style={{ color: 'white', fontWeight: 'bold' }}> GitHub</Text>
+      <Text style={{ color: 'white' }}>hamachi-geek</Text>
       <TouchableOpacity style={styles.button} onPress={printNamecard}>
-        <Text style={styles.buttonText}>Print name card</Text>
+        <Text style={styles.buttonText}>Print</Text>
       </TouchableOpacity>
     </View>
   );
@@ -40,6 +46,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "black"
   },
   img: {
     width: 192,

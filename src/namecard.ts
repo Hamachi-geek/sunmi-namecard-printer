@@ -27,7 +27,7 @@ export const printNamecard = async () => {
     await SunmiV2Printer.printOriginalText(`GitHub: @${profile.github}\n`);
     await SunmiV2Printer.printOriginalText(`Twitter: @${profile.twitter}\n`);
     await SunmiV2Printer.printOriginalText(
-      `Website: https://${profile.website}\n`
+      `hamachi-geek.github.io (now making)`
     );
     await SunmiV2Printer.printOriginalText("===============================\n");
     await SunmiV2Printer.setAlignment(1);
