@@ -26,12 +26,13 @@ export const printNamecard = async () => {
     await SunmiV2Printer.printOriginalText("===============================\n");
     await SunmiV2Printer.printOriginalText(`GitHub: @${profile.github}\n`);
     await SunmiV2Printer.printOriginalText(`Twitter: @${profile.twitter}\n`);
-    await SunmiV2Printer.printOriginalText(`Mastdon: @${profile.mastdon}\n`);
+    await SunmiV2Printer.printOriginalText(`Misskey: @${profile.misskey}\n`);
+    await SunmiV2Printer.printOriginalText(`Mastodon: @${profile.mastodon}\n`);
 
     await SunmiV2Printer.printOriginalText("===============================\n");
     await SunmiV2Printer.setAlignment(1);
     await SunmiV2Printer.setFontSize(22);
-    await SunmiV2Printer.printOriginalText("Follow me on Mastdon! ");
+    await SunmiV2Printer.printOriginalText("Visit my homepage! ");
     await SunmiV2Printer.printBitmap(
       base64TwitterLogo,
       22 /* width */,
@@ -40,7 +41,7 @@ export const printNamecard = async () => {
     await SunmiV2Printer.setFontSize(16);
     await SunmiV2Printer.printOriginalText("\n\n");
     await SunmiV2Printer.printQRCode(
-      `https://mstdn.y-zu.org/web/@hamachi`,
+      `https://hamachi.osaka`,
       8 /* modulesize: which should be within 4-16 */,
       1 /* errorlevel: error correction level (0-3) */
     );
